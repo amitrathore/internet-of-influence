@@ -9,4 +9,4 @@ The site is self-contained for GitHub Pages:
 - `script.js` contains local reveal behavior.
 - `assets/images/` contains downloaded image assets from the original site.
 
-No external fonts, scripts, embeds, or hosted images are required at runtime.
+Images, fonts, and scripts are local. The Vimeo video embed is retained from the original Carrd site.
