@@ -195,6 +195,11 @@ h3 {
   transform: translateY(-1px);
 }
 
+.secondary-button {
+  border-color: rgba(85, 209, 189, 0.55);
+  background: linear-gradient(135deg, rgba(85, 209, 189, 0.16), rgba(141, 124, 255, 0.08));
+}
+
 .hero-image {
   position: relative;
   aspect-ratio: 1;
@@ -481,6 +486,43 @@ h3 {
   gap: 1px;
 }
 
+.invest {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: clamp(2rem, 5vw, 5rem);
+  background:
+    linear-gradient(135deg, rgba(246, 184, 90, 0.14), transparent 32%),
+    rgba(244, 239, 228, 0.035);
+}
+
+.invest-copy {
+  max-width: 58rem;
+}
+
+.invest-copy p:not(.eyebrow),
+.funds-card p {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+}
+
+.funds {
+  background:
+    linear-gradient(135deg, rgba(141, 124, 255, 0.12), transparent 34%),
+    rgba(17, 17, 23, 0.42);
+}
+
+.funds-card {
+  max-width: 58rem;
+  padding: clamp(1.6rem, 3vw, 3rem);
+  border: 1px solid var(--line);
+  background: rgba(34, 34, 44, 0.78);
+}
+
+.funds-card .button {
+  margin-top: 1rem;
+}
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;
@@ -593,6 +635,11 @@ h3 {
   .solutions,
   .transparency-grid {
     grid-template-columns: 1fr;
+  }
+
+  .invest {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .problem {
