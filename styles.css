@@ -477,14 +477,18 @@ h3 {
 }
 
 .full-bleed-image {
+  display: flex;
+  justify-content: center;
   width: 100vw;
   margin-left: calc(50% - 50vw);
+  padding: clamp(2rem, 5vw, 5rem) 4vw;
   border-right: 0;
   border-left: 0;
 }
 
 .full-bleed-image img {
   width: 100%;
+  max-width: 1200px;
   height: auto;
   min-height: 0;
   object-fit: contain;
