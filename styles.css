@@ -397,8 +397,7 @@ h3 {
   font-size: clamp(1.05rem, 1.5vw, 1.32rem);
 }
 
-.capital-layout,
-.financing {
+.capital-layout {
   display: grid;
   grid-template-columns: minmax(18rem, 0.9fr) minmax(0, 1fr);
   align-items: center;
@@ -474,6 +473,24 @@ h3 {
   background:
     linear-gradient(135deg, rgba(85, 209, 189, 0.08), transparent 28%),
     rgba(17, 17, 23, 0.36);
+}
+
+.financing-copy {
+  margin-bottom: clamp(3rem, 7vw, 7rem);
+}
+
+.full-bleed-image {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  border-right: 0;
+  border-left: 0;
+}
+
+.full-bleed-image img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
 }
 
 .transparency {
@@ -584,8 +601,7 @@ h3 {
   .hero,
   .thesis,
   .network,
-  .capital-layout,
-  .financing {
+  .capital-layout {
     grid-template-columns: 1fr;
   }
 
