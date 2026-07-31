@@ -494,6 +494,10 @@ h3 {
   object-fit: contain;
 }
 
+.compact-presentation img {
+  max-width: 840px;
+}
+
 .transparency {
   padding-top: clamp(4.5rem, 7vw, 8rem);
 }
